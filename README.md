@@ -1,6 +1,6 @@
 # 🌐 LLM4EA 2025: Hybrid Intelligence Challenge
 
-[![GitHub Pages](https://img.shields.io/badge/View%20Live%20Site-LLM4EA%202025-blueviolet)](https://chauhandikshit.github.io/llm4ea/)
+[![GitHub Pages](https://img.shields.io/badge/View%20Live%20Site-LLM4EA%202025-blueviolet)](https://chauhandikshit.github.io/LLM4EA-2025-Hybrid-Intelligence-Challenge/)
 
 Welcome to the official repository of the **LLM4EA 2025 Challenge** — a global competition that bridges Large Language Models (LLMs) and Evolutionary Algorithms (EAs) for next-generation optimization.
 
