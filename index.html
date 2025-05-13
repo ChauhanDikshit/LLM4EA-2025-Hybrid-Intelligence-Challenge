@@ -72,15 +72,37 @@
       margin-top: 4rem;
       color: #ccc;
     }
+    .collapsible {
+      background-color: #1890ff;
+      color: white;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;
+    }
+    .collapsible:hover {
+      background-color: #007acc;
+    }
+    .content {
+      padding: 0 1rem;
+      display: none;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 5px;
+    }
+    .highlight-tracks {
+      background-color: #004d66;
+      padding: 1rem;
+      border-left: 6px solid #00e6e6;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
   </style>
-
-  <style>
-  .highlight-tracks {
-    background-color: #e6f7ff;
-    padding: 10px;
-    border-left: 4px solid #1890ff;
-  }
-</style>
 </head>
 <body>
   <header>
@@ -106,38 +128,36 @@
   </section>
 
   <section> 
-  <h2>Scope & Tracks</h2>
+    <h2>Scope & Tracks</h2>
 
-  <div class="track track-a">
-    <button class="collapsible">Track A: LLM-Centric Hybrid Algorithm Design (Poster Presentation Track)</button>
-    <div class="content">
-      <ul>
-        <li>Participants submit an algorithm or conceptual workflow where an LLM contributes significantly in design, strategy generation, reasoning, or adaptive components.</li>
-        <li>Evaluation through poster presentations.</li>
-        <li>Participants explain novelty, the design process, and how LLMs are used in designing EA.</li>
-        <li>
-          The aim is to encourage creativity and advancement in the design of intelligent metaheuristics where LLMs play an integral, explanatory, or generative role in the algorithmic workflow. This track invites participants to explore how LLMs can be used to rethink or co-create evolutionary algorithms in novel and intelligent ways. Submissions should showcase how LLMs assist in the design, adaptation, or generation of EA components, and explain the rationale behind their design choices.
-          <br><br>
-          This track emphasizes conceptual novelty, technical creativity, and explainability over raw performance. It's intended for researchers who wish to demonstrate original thinking, frameworks, or architectures, even if they are in early-stage development or lack competitive benchmarking results.
-        </li>
-      </ul>
+    <div class="track track-a highlight-tracks">
+      <button class="collapsible">Track A: LLM-Centric Hybrid Algorithm Design (Poster Presentation Track)</button>
+      <div class="content">
+        <ul>
+          <li>Participants submit an algorithm or conceptual workflow where an LLM contributes significantly in design, strategy generation, reasoning, or adaptive components.</li>
+          <li>Evaluation through poster presentations.</li>
+          <li>Participants explain novelty, the design process, and how LLMs are used in designing EA.</li>
+          <li>
+            The aim is to encourage creativity and advancement in the design of intelligent metaheuristics where LLMs play an integral, explanatory, or generative role in the algorithmic workflow. This track invites participants to explore how LLMs can be used to rethink or co-create evolutionary algorithms in novel and intelligent ways. Submissions should showcase how LLMs assist in the design, adaptation, or generation of EA components, and explain the rationale behind their design choices.
+            <br><br>
+            This track emphasizes conceptual novelty, technical creativity, and explainability over raw performance. It's intended for researchers who wish to demonstrate original thinking, frameworks, or architectures, even if they are in early-stage development or lack competitive benchmarking results.
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="track track-b">
-    <button class="collapsible">Track B: LLM-Proposed or LLM-Refined Algorithm on CEC 2017 (Benchmark Performance Track)</button>
-    <div class="content">
-      <ul>
-        <li>Participants use LLMs to propose or refine EAs and test them on CEC 2017 bound-constrained optimization problems.</li>
-        <li>Emphasis is on empirical performance while ensuring a clear role of the LLM in algorithm design or adaptation.</li>
-        <li>Evaluation through benchmark performance and reproducibility.</li>
-        <li>LLM involvement must be documented and justified.</li>
-      </ul>
+    <div class="track track-b">
+      <button class="collapsible">Track B: LLM-Proposed or LLM-Refined Algorithm on CEC 2017 (Benchmark Performance Track)</button>
+      <div class="content">
+        <ul>
+          <li>Participants use LLMs to propose or refine EAs and test them on CEC 2017 bound-constrained optimization problems.</li>
+          <li>Emphasis is on empirical performance while ensuring a clear role of the LLM in algorithm design or adaptation.</li>
+          <li>Evaluation through benchmark performance and reproducibility.</li>
+          <li>LLM involvement must be documented and justified.</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
-
-
+  </section>
 
   <section>
     <h2>Rules & Guidelines</h2>
@@ -190,23 +210,7 @@
     </ul>
   </section>
 
-<!--   <section id="register">
-    <h2>Register Your Team</h2>
-    <form action="#" method="post">
-      <label for="name">Team Name</label>
-      <input type="text" id="name" name="team_name" required>
-
-      <label for="members">Team Members (names + emails)</label>
-      <textarea id="members" name="team_members" rows="4" required></textarea>
-
-      <label for="affiliation">Affiliation (University/Lab/Company)</label>
-      <input type="text" id="affiliation" name="affiliation">
-
-      <input type="submit" value="Submit Registration">
-    </form>
-  </section> -->
-
-   <section>
+  <section>
     <h2>Registration</h2>
     <p>To participate in the LLM4EA 2025 Challenge, first complete the workshop registration at the link below. Registering for the workshop automatically qualifies you to participate in the competition.</p>
     <p><strong><a class="cta" href="https://www.nitj.ac.in/events_registration/workshop_sseaml_2025/login" target="_blank">Workshop Registration Portal</a></strong></p>
@@ -216,35 +220,8 @@
   <section id="register">
     <h2>Complete Registration for Competition</h2>
     <p>
-<!--     👉 If you'd prefer to open the form in a new tab,  -->
-    <strong><a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSd2oDC89jcNNe1_s6Q5x-j7E20MZvqTojaAOpM8DRo6IO9bbQ/viewform" target="_blank">Competition Registration Portal</a></strong>
-      </p>
-<!--   This is to embed the Google Form in the Website
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2oDC89jcNNe1_s6Q5x-j7E20MZvqTojaAOpM8DRo6IO9bbQ/viewform?embedded=true"
-          width="100%" height="800"
-          frameborder="0" marginheight="0" marginwidth="0">
-    Loading…
-  </iframe> -->
-    
-<!--   This is for creating a form directly, but it does not store any data
-    <form action="#" method="post">
-      <label for="name">Team Name</label>
-      <input type="text" id="name" name="team_name" required>
-
-      <label for="members">Team Members (names + emails)</label>
-      <textarea id="members" name="team_members" rows="4" required></textarea>
-
-      <label for="affiliation">Affiliation (University/Lab/Company)</label>
-      <input type="text" id="affiliation" name="affiliation">
-
-      <label for="regid">Workshop Registration ID</label>
-      <input type="text" id="regid" name="registration_id" required>
-
-      <label for="transid">Transaction ID</label>
-      <input type="text" id="transid" name="transaction_id" required>
-
-      <input type="submit" value="Submit Registration">
-    </form> -->
+      <strong><a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSd2oDC89jcNNe1_s6Q5x-j7E20MZvqTojaAOpM8DRo6IO9bbQ/viewform" target="_blank">Competition Registration Portal</a></strong>
+    </p>
   </section>
 
   <section>
@@ -266,5 +243,19 @@
   <footer>
     &copy; 2025 LLM4EA Challenge. All rights reserved.
   </footer>
+
+  <script>
+    document.querySelectorAll(".collapsible").forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
