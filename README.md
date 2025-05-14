@@ -24,6 +24,6 @@ LLM4EA invites researchers, students, and professionals to explore intelligent h
 ### 📬 Contact
 
 Organized by **Dr. B. R. Ambedkar National Institute of Technology, Jalandhar (NITJ)**  
-📧 Email: `anupam@nitj.ac.in`
+📧 Email: `evoml@nitj.ac.in`
 
 ---
