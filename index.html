@@ -30,6 +30,7 @@
       margin: auto;
       font-size: 1.1rem;
       line-height: 1.6;
+      
     }
     .cta {
       background: #00e6e6;
@@ -103,23 +104,30 @@
       margin-bottom: 1rem;
     }
     .highlight-paragraph {
-  background-color: rgba(255, 255, 255, 0.1); /* light transparent shade */
-  padding: 1rem;
-  border-left: 4px solid #00e6e6;
-  border-radius: 6px;
-  margin-top: 1rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-  .track-description-box {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    margin: 1rem 0;
-    text-align: justify;
-  }
+      padding: 1rem;
+      border-left: 4px solid #00e6e6;
+      border-radius: 6px;
+      margin-top: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: justify;
+    }
+    .highlight-paragraph p {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: justify;
+    }
+    .track-description-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin: 1rem 0;
+      text-align: justify;
+    }
+.about-title {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -131,19 +139,25 @@
   </header>
 
   <section>
-    <h2>Overview & Theme</h2>
-    <p>The LLM4EA 2025 Challenge brings together the power of Large Language Models (LLMs) and Evolutionary Algorithms (EAs) to develop next-generation optimization tools. This hybrid approach seeks to transform algorithm design, parameter adaptation, and real-world problem solving through the lens of intelligent language models.</p>
+    <h2 class="about-title">Overview and Theme</h2>
+    <div class="highlight-paragraph">
+      <p>The LLM4EA 2025 Challenge is a pioneering competition that seeks to explore and define the future of hybrid algorithm design by uniting two powerful paradigms: Large Language Models (LLMs) and Evolutionary Algorithms (EAs). As both fields have evolved rapidly, with EAs demonstrating robust problem-solving across a wide range of domains, and LLMs revolutionizing reasoning, synthesis, and knowledge representation, this challenge aims to harness their synergy to unlock new frontiers in intelligent optimization.</p>
+      <p>Traditional EA design relies heavily on expert-driven heuristics, trial-and-error parameter tuning, and handcrafted operators. However, these design processes can be abstract, time-consuming, and difficult to generalize across problems. LLMs offer a transformative advantage by introducing natural language reasoning, code generation, prompt engineering, and adaptive decision-making into the optimization workflow. When effectively integrated, LLMs can act as a co-pilot, designer, or even a dynamic component of an EA system.</p>
+      <p>This challenge embraces the human-in-the-loop and AI-in-the-loop paradigms, inviting researchers to rethink how optimization tools are developed. It opens the door to LLM-guided metaheuristics that can self-adapt, generate operators, respond to problem features, or even evolve their own strategies over time. Participants are encouraged to innovate not only through performance but through explainable and generalizable designs that highlight the potential of intelligent hybrid systems.</p>
+      <p>The competition features two complementary tracks. Track A emphasizes the creative and conceptual side, how LLMs can drive or support the design of novel EAs, with a focus on methodology and explainability over performance. Track B tests the practical capabilities of such developed hybrid innovation systems by applying them to established benchmark functions from the CEC 2017 suite, evaluating their real-world efficiency, robustness, and competitiveness.</p>
+      <p>In essence, LLM4EA 2025 is more than a competition, it is a collaborative experiment in building AI systems that can design better AI systems, setting the stage for a new era of optimization research powered by machine reasoning, language understanding, and evolutionary intelligence.</p>
+    </div>
   </section>
 
   <section>
     <h2>Objectives</h2>
     <ul>
-      <li>Explore synergies between LLMs and EAs for hybrid optimization.</li>
-      <li>Encourage the design of intelligent metaheuristics using LLMs.</li>
-      <li>Benchmark and promote effective strategies for language-informed evolution.</li>
-      <li>Foster global collaboration in hybrid AI development.</li>
-    </ul>
-  </section>
+      <li>Enable hybrid intelligence by integrating LLMs into EA design, promoting adaptive, generative, and explainable optimization systems.</li>
+      <li>Inspire novel EA designs through LLM-assisted reasoning, code generation, and problem understanding.</li>
+      <li>Promote both creativity and empirical performance, with Track A focusing on design innovation and Track B on benchmark evaluation.</li>
+      <li>Build a collaborative research community around AI-in-the-loop and human-in-the-loop optimization strategies.</li>
+</ul>
+<section>
 
   <section>
   <h2>Scope & Tracks</h2>
@@ -157,7 +171,7 @@
 
     <div class="track-description-box">
       <p>
-        The aim is to encourage creativity and advancement in the design of intelligent metaheuristics where LLMs play an integral, explanatory, or generative role in the algorithmic workflow. This track invites participants to explore how LLMs can be used to rethink or co-create evolutionary algorithms in novel and intelligent ways. Submissions should showcase how LLMs assist in the design, adaptation, or generation of EA components, and explain the rationale behind their design choices.
+        The aim is to encourage creativity and advancement in the design of intelligent EAs where LLMs play an integral, explanatory, or generative role in the algorithmic workflow. This track invites participants to explore how LLMs can be used to rethink or co-create EAs in novel and intelligent ways. Submissions should showcase how LLMs assist in the design, adaptation, or generation of EA components, and explain the rationale behind their design choices.
       </p>
       <p>
         This track emphasizes conceptual novelty, technical creativity, and explainability over raw performance. It's intended for researchers who wish to demonstrate original thinking, frameworks, or architectures, even if they are in early-stage development or lack competitive benchmarking results.
@@ -171,6 +185,14 @@
       <li>Evaluation through benchmark performance and reproducibility.</li>
       <li>LLM involvement must be documented and justified.</li>
     </ul>
+<div class="track-description-box">
+      <p>
+        The aim is to evaluate the practical performance and competitive advantage of LLM-assisted EAs by applying them to standardized, real-parameter optimization benchmarks. This track focuses on advancing algorithmic effectiveness through intelligent, LLM-integrated design and decision-making processes.</p>
+<p> Participants must demonstrate that the LLM meaningfully contributes to the EA's development, such as through parameter control, variation operator tuning, restart strategies, or diversity mechanisms, and quantify its impact on optimization performance.</p>
+      <p>
+        Submitted algorithms will be tested by the participants themselves on the 30 test problems of the CEC 2017 Bound-Constrained Optimization Suite, a rigorous benchmark set comprising multimodal, hybrid, and composition functions, under 30 dimension (30D). Performance should be evaluated based on the given evaluation criteria in the CEC 2017 test report, and submissions must include a transparent report documenting the role and contributions of the LLM.</p>
+    </div>
+
   </ul>
 </section>
 
@@ -197,14 +219,38 @@
   </section>
 
   <section>
-    <h2>Submission Requirements</h2>
-    <ul>
-      <li>Source code (well-commented and reproducible)</li>
-      <li>Short report (PDF, 4 pages max)</li>
-      <li>README file with setup and instructions</li>
-      <li>Benchmark results for designated problems</li>
-    </ul>
-  </section>
+  <h2>Submission Requirements</h2>
+ <ul>
+  <h3>For Track A</h3>
+ 
+    <li>A 4-page technical report detailing:
+      <ul>
+        <li>The proposed metaheuristic and where/how the LLM is integrated</li>
+        <li>Conceptual architecture and motivation</li>
+        <li>Preliminary or illustrative experiments (optional)</li>
+        <li>Explainability features or how LLM output is interpreted</li>
+      </ul>
+    </li>
+    <li>Reproducible code or prototype scripts</li>
+    <li>Prompts or training data (if custom or fine-tuned LLMs are used)</li>
+  
+
+  <h3>For Track B</h3>
+
+    <li>A 4-page technical report that includes:
+      <ul>
+        <li>The proposed metaheuristic and where/how the LLM is integrated</li>
+        <li>Conceptual architecture and motivation</li>
+        <li>System overview and LLM integration details</li>
+        <li>Benchmark setup and test protocol</li>
+        <li>Results tables, and comparisons</li>
+      </ul>
+    </li>
+    <li>Complete source code with README</li>
+    <li>Benchmark result files (CSV, JSON, or log format)</li>
+  </ul>
+</section>
+
 
   <section>
     <h2>Timeline</h2>
