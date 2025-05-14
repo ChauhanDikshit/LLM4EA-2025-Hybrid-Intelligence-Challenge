@@ -164,14 +164,14 @@
   <ul>
     <h3>Track A: LLM-Centric Hybrid Algorithm Design (Poster Presentation Track)</h3>
     <ul>
-      <li>Participants submit an algorithm or conceptual workflow where an LLM contributes significantly in design, strategy generation, reasoning, or adaptive components.</li>
+      <li>Participants submit an algorithm or conceptual workflow where an LLM contributes significantly to design, strategy generation, reasoning, or adaptive components.</li>
       <li>Evaluation through poster presentations.</li>
       <li>Participants explain novelty, the design process, and how LLMs are used in designing EA.</li>
     </ul>
 
     <div class="track-description-box">
       <p>
-        The aim is to encourage creativity and advancement in the design of intelligent EAs where LLMs play an integral, explanatory, or generative role in the algorithmic workflow. This track invites participants to explore how LLMs can be used to rethink or co-create EAs in novel and intelligent ways. Submissions should showcase how LLMs assist in the design, adaptation, or generation of EA components, and explain the rationale behind their design choices.
+        The aim is to encourage creativity and advancement in the design of intelligent EAs where LLMs play an integral, explanatory, or generative role in the algorithmic workflow. This track invites participants to explore how LLMs can be used to rethink or co-create EAs in novel and intelligent ways. Submissions should showcase how LLMs assist in the design, adaptation, or generation of EA components and explain the rationale behind their design choices.
       </p>
       <p>
         This track emphasizes conceptual novelty, technical creativity, and explainability over raw performance. It's intended for researchers who wish to demonstrate original thinking, frameworks, or architectures, even if they are in early-stage development or lack competitive benchmarking results.
@@ -189,8 +189,9 @@
       <p>
         The aim is to evaluate the practical performance and competitive advantage of LLM-assisted EAs by applying them to standardized, real-parameter optimization benchmarks. This track focuses on advancing algorithmic effectiveness through intelligent, LLM-integrated design and decision-making processes.</p>
 <p> Participants must demonstrate that the LLM meaningfully contributes to the EA's development, such as through parameter control, variation operator tuning, restart strategies, or diversity mechanisms, and quantify its impact on optimization performance.</p>
-      <p>
-        Submitted algorithms will be tested by the participants themselves on the 30 test problems of the CEC 2017 Bound-Constrained Optimization Suite, a rigorous benchmark set comprising multimodal, hybrid, and composition functions, under 30 dimension (30D). Performance should be evaluated based on the given evaluation criteria in the CEC 2017 test report, and submissions must include a transparent report documenting the role and contributions of the LLM.</p>
+     <p>
+    Submitted algorithms will be tested by the participants themselves on the 30 test problems of the CEC 2017 Bound-Constrained Optimization Suite, a rigorous benchmark set comprising multimodal, hybrid, and composition functions, under 30 dimensions (30D). Performance should be evaluated based on the given evaluation criteria in <a href="https://github.com/P-N-Suganthan/CEC2017-BoundContrained/blob/master/Definitions%20of%20%20CEC2017%20benchmark%20suite%20final%20version%20updated.pdf" target="_blank" style="color: red;"><strong>the CEC 2017 test report</strong></a>, and the results should be compared with the top three tiers' winners (<a href="https://github.com/P-N-Suganthan/2024-CEC/tree/main" target="_blank" style="color: red;"><strong>L-SRDE</strong></a>, <a href="https://github.com/P-N-Suganthan/CEC2017-BoundContrained/tree/master" target="_blank" style="color: red;"><strong>EBOwithCMR</strong></a>, and <a href="https://github.com/P-N-Suganthan/2024-CEC/tree/main" target="_blank" style="color: red;"><strong>RDE</strong></a>). Submissions must include a transparent report documenting the role and contributions of the LLM.
+</p>
     </div>
 
   </ul>
@@ -207,14 +208,10 @@
     </ul>
   </section>
 
-  <section>
+   <section>
     <h2>Evaluation Criteria</h2>
     <ul>
-      <li>Originality and innovation in hybrid approach (30%)</li>
-      <li>Optimization performance on benchmark problems (30%)</li>
-      <li>Clarity and quality of implementation (20%)</li>
-      <li>Scalability and generalization of the method (10%)</li>
-      <li>Explainability of LLM usage in the pipeline (10%)</li>
+      <li>Details are presented in <a href="https://github.com/P-N-Suganthan/CEC2017-BoundContrained/blob/master/Definitions%20of%20%20CEC2017%20benchmark%20suite%20final%20version%20updated.pdf" target="_blank" style="color: red;"><strong>the CEC 2017 test report</strong></a>.</li>
     </ul>
   </section>
 
@@ -225,13 +222,13 @@
  
     <li>A 4-page technical report detailing:
       <ul>
-        <li>The proposed metaheuristic and where/how the LLM is integrated</li>
+        <li>The proposed EA and and details on LLM integration</li>
         <li>Conceptual architecture and motivation</li>
-        <li>Preliminary or illustrative experiments (optional)</li>
-        <li>Explainability features or how LLM output is interpreted</li>
+        <li>Preliminary results on the CEC 2017 benchmark</li>
+        <li>Explainability features or how the LLM output is interpreted</li>
       </ul>
     </li>
-    <li>Reproducible code or prototype scripts</li>
+    <li>Reproducible code</li>
     <li>Prompts or training data (if custom or fine-tuned LLMs are used)</li>
   
 
@@ -239,15 +236,15 @@
 
     <li>A 4-page technical report that includes:
       <ul>
-        <li>The proposed metaheuristic and where/how the LLM is integrated</li>
+        <li>The proposed EA and and details on LLM integration</li>
         <li>Conceptual architecture and motivation</li>
         <li>System overview and LLM integration details</li>
         <li>Benchmark setup and test protocol</li>
-        <li>Results tables, and comparisons</li>
+        <li>Results tables, and comparisons with L-SRDE, RDE, 1st and 2nd winners of the CEC 2024 competition, and EBOwithCMR, winner of CEC 2017 competition.</li>
       </ul>
     </li>
     <li>Complete source code with README</li>
-    <li>Benchmark result files (CSV, JSON, or log format)</li>
+    <li>Benchmark result files (CSV format)</li>
   </ul>
 </section>
 
